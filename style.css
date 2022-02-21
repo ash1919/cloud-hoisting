@@ -27,6 +27,11 @@ h2 {
   line-height: 1.2;
   margin: 10px 0;
 }
+
+p {
+  margin: 10px 0;
+}
+
 img {
   width: 95%;
   height: auto;
@@ -80,8 +85,8 @@ img {
   justify-self: flex-end;
   z-index: 100;
 }
-.hero-form:focus{
-    outline: none;
+.hero-form:focus {
+  outline: none;
 }
 .hero-form input[type="text"],
 .hero-form input[type="email"] {
@@ -90,29 +95,71 @@ img {
   padding: 15px;
   width: 100%;
   margin: 5px 0;
-  
 }
 
-.hero-form input[type="submit"]{
- margin-top: 40px;
+.hero-form input[type="submit"] {
+  margin-top: 40px;
 }
 .hero::before,
-.hero::after{
+.hero::after {
   content: "";
   position: absolute;
   height: 4.5em;
   bottom: -2.1em;
-  right:0;
+  right: 0;
   left: 0;
-  background-color:white;
+  background-color: white;
   transform: skewY(-2deg);
 }
 /* stats */
-.stats{
-  margin-top: 8em;
-} 
+.stats {
+  padding-top: 8em;
+}
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+.stats .grid h3 {
+  padding-top: 15px;
+  font-size: 30px;
+}
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* CLI */
 
-
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.cli .grid> *:first-child{
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 2;
+}
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+.cloud-text h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.cloud input[type="button"]{
+background-color: rgb(22, 20, 20);
+}
+/* languages */
+.languages .flex{
+  flex-wrap: wrap;
+}
+.languages .card{
+  margin: 18px 10px 40px;
+  text-align: center;
+}
+.languages .card h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -120,6 +167,7 @@ img {
   overflow: hidden;
   padding: 0 40px;
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -134,8 +182,8 @@ img {
   gap: 20px;
   height: 100%;
 }
-.grid-3{
-  grid-template-columns: repeat(3,1fr);
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 .card {
   background-color: white;
@@ -143,6 +191,7 @@ img {
   margin: 10px;
   border-radius: 10px;
   color: #333;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 .btn {
   display: inline-block;
@@ -152,6 +201,7 @@ img {
   border: none;
   border-radius: 5px;
   margin: 10px 0;
+
 }
 .btn-outline {
   background: transparent;
@@ -162,7 +212,7 @@ img {
   background-color: var(--primary-color);
   color: #fff;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
 /* Margin */
