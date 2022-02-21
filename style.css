@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+h1,
+h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+img {
+  width: 95%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: white;
+  height: 70px;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar-right a {
+  padding: 10px;
+  margin: 0 10px;
+  color: white;
+}
+.navbar-right a:hover {
+  border-bottom: 2px solid white;
+}
+/* Hero */
+.hero {
+  background-color: var(--primary-color);
+  height: 50vh;
+  position: relative;
+  color: #fff;
+}
+.hero .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+}
+
+.hero-text h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  margin-bottom: 1em;
+}
+.hero-form {
+  position: relative;
+  height: 370px;
+  width: 370px;
+  top: 5em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  justify-self: flex-end;
+  z-index: 100;
+}
+.hero-form:focus{
+    outline: none;
+}
+.hero-form input[type="text"],
+.hero-form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid rgb(153, 150, 150);
+  padding: 15px;
+  width: 100%;
+  margin: 5px 0;
+  
+}
+
+.hero-form input[type="submit"]{
+ margin-top: 40px;
+}
+.hero::before,
+.hero::after{
+  content: "";
+  position: absolute;
+  height: 4.5em;
+  bottom: -2.1em;
+  right:0;
+  left: 0;
+  background-color:white;
+  transform: skewY(-2deg);
+}
+/* stats */
+.stats{
+  margin-top: 8em;
+} 
+
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+.grid-3{
+  grid-template-columns: repeat(3,1fr);
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #333;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.text-center{
+  text-align: center;
+}
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
